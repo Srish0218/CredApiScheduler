@@ -9,6 +9,6 @@ jobs:
   call-api:
     runs-on: ubuntu-latest
     steps:
-      - name: Call the insecure HTTPS API
+      - name: Call the API with insecure SSL
         run: |
           curl -k -X GET "https://cred-testapi.transmonqa.in:9443/brcp"
